@@ -31,11 +31,11 @@ and should return a number.
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
 //method to burger
-burger.discount = function(){
+burger.discount = function(discount){
   let result;
-  if (burger.discount === "teacher") {
+  if (discount === "teacher") {
     result = 13.5;
-  } else if (burger.discount === "student"){
+  } else if (discount === "student"){
     result = 13.5; 
   } else {
     result = 16.2;
@@ -47,7 +47,7 @@ return result;
 
 
 
-console.log(burger.discount("student"));
+console.log(burger.discount("public"));
 
 console.log(burger);
 ///////////////Reviews (MVP)///////////////////
@@ -90,9 +90,13 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * For example, if getReviewByIndex is invoked with reviews and the number 0
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
 */
-function getReviewByIndex(reviews, index) {
-    /* code here */
-  }
+// function getReviewByIndex(reviews, index) {
+
+//   return `${name} gave the restaurant a ${rating}, and their feedback was: ${feedback}`
+//     /* code here */
+//   }
+
+//   console.log(getReviewByIndex(reviews, 2));
   
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
