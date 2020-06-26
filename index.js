@@ -37,7 +37,7 @@ burger.discount = function(){
     result = 13.5;
   } else if (burger.discount === "student"){
     result = 13.5; 
-  } else{
+  } else {
     result = 16.2;
   };
 
@@ -69,8 +69,14 @@ console.log(reviews[5].feedback);
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
+reviews.push({name: "Harrison", rating: 5, feedback:"Great food!"});
+console.log(reviews);
 
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+
+/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays" */
+
+reviews[7].feedback = "Good food, not so great service"
+
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
